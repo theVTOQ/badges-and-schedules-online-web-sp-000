@@ -10,3 +10,8 @@ end
 def assign_rooms(names)
   names.collect {|name| "#Hello, #{name}! You'll be assigned to room #{names.index(name)}!"}
 end
+
+def printer(names)
+  names.each {|name| puts badge_maker(name)}
+  batch_badge_creator(names).each {|message| puts message}
+end
